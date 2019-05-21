@@ -1,8 +1,4 @@
-# 简介
-本代码为系列课程, 第七周部分的课后作业内容。
-http://edu.csdn.net/lecturer/1427
 
-# TinymMind上GPU运行费用较贵，每 CPU 每小时 $0.09，每 GPU 每小时 $0.99，所有作业内容推荐先在本地运行出一定的结果，保证运行正确之后，再上传到TinyMind上运行。初始运行推荐使用CPU运行资源，待所有代码确保没有问题之后，再启动GPU运行。
 
 ## 必做作业1
 利用slim框架，做一个InceptionV3的迁移训练
@@ -12,7 +8,7 @@ http://edu.csdn.net/lecturer/1427
 参考Tinymind汉字识别竞赛说明
 https://www.tinymind.cn/competitions/41
 
-本作业需要train数据集和自由练习赛部分数据。
+需要train数据集和自由练习赛部分数据。
 
 
 ### 预训练模型
@@ -23,7 +19,7 @@ https://www.tinymind.cn/competitions/41
 模型代码来自：
 https://github.com/tensorflow/models/tree/master/research/slim
 
-这里为了适应本作业提供的数据集，稍作修改，添加了一个quiz数据集以及一个训练并验证的脚本，实际使用的代码为：
+这里为了适应提供的数据集，稍作修改，添加了一个quiz数据集以及一个训练并验证的脚本，实际使用的代码为：
 https://gitee.com/ai100/quiz-word-recog
 
 在tinymind上新建一个模型，模型设置参考如下模型：
@@ -47,10 +43,10 @@ https://www.tinymind.com/ai100/quiz-word-recog
 - max_num_batches 128  # 验证batches，这里会验证128×32共4096个图片样本的数据。
 - batche_size 32
 
-鼓励参与课程的学员尝试不同的参数组合以体验不同的参数对训练准确率和收敛速度的影响。
+鼓励尝试不同的参数组合以体验不同的参数对训练准确率和收敛速度的影响。
 
 ### 结果评估
-学员需要提供运行log的截图和文档描述
+提供运行log的截图和文档描述
 
 在tinymind运行log的输出中，可以看到如下内容：
 ```sh
